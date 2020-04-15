@@ -1,10 +1,114 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title>Кэт энерджи: каталог продукции</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Кэт энерджи: каталог продукции</title>
 </head>
 <body>
-<main></main>
+<header class="header">
+  <section class="header__section">
+    <h2>Главное меню навигации</h2>
+    <a class="logo header__logo" href="#">
+      <img class="logo__img" src="#">
+    </a>
+    <nav class="main-nav header__main-nav">
+      <a class="main-nav__link" href="#">Главная</a>
+      <a class="main-nav__link" href="№">Каталог продукции</a>
+      <a class="main-nav__link" href="№">Подбор программы</a>
+    </nav>
+  </section>
+</header>
+<main class="main-catalog">
+  <h1 class="visually-hidden">Каталог продукции интернет-магазин корма для котов "Cat Energy"</h1>
+  <h2>Каталог продукции</h2>
+  <section>
+    <h3 class="visually-hidden">Список товаров интернет-магазин корма для котов "Cat Energy"</h3>
+    <article class="card-product">
+      <img class="card-product__img" src="#">
+      <table>
+        <caption class="card-product__title">Cat Energy PRO 500 г</caption>
+        <tr>
+          <td class="card-product__capacity">Объем</td>
+          <td class="card-product__capacity-value">500 г</td>
+        </tr>
+        <tr>
+          <td class="card-product__taste">Вкус</td>
+          <td class="card-product__value">Курица</td>
+        </tr>
+        <tr>
+          <td class="card-product__price">Цена</td>
+          <td class="card-product__price-value">700 Р</td>
+        </tr>
+      </table>
+      <a class="card-product__button" href="№">Заказать</a>
+    </article>
+  </section>
+  <section class="more-goods">
+    <h2 class="more-goods__title">Показать еще 100500 товаров</h2>
+    <p class="more-goods__description">На самом деле вкусов гораздо больше!</p>
+    <a class="more-goods__button" href="#">Показать все</a>
+  </section>
+  <section class="additional-goods">
+    <h2 class="additional-goods__title">Дополнительные товары</h2>
+    <article class="additional-item additional-goods__item">
+      <p class="additional-item__title">Сахарозаменитель</p>
+      <p class="additional-item__capacity">1 упаковка (100 г)</p>
+      <p class="additional-item__price">200 Р.</p>
+      <a class="additional-item__button" href="#">Заказать</a>
+    </article>
+    <article class="additional-item additional-goods__item">
+      <p class="additional-item__title">Питьевая вода</p>
+      <p class="additional-item__capacity">5 литров</p>
+      <p class="additional-item__price">50 Р.</p>
+      <a class="additional-item__button" href="#">Заказать</a>
+    </article>
+    <article class="additional-item additional-goods__item">
+      <p class="additional-item__title">Молоко</p>
+      <p class="additional-item__capacity">1 литр</p>
+      <p class="additional-item__price">100 Р.</p>
+      <a class="additional-item__button" href="#">Заказать</a>
+    </article>
+    <article class="additional-item additional-goods__item">
+      <p class="additional-item__title">Витамины</p>
+      <p class="additional-item__capacity">1 упаковка (30 г)</p>
+      <p class="additional-item__price">300 Р.</p>
+      <a class="additional-item__button" href="#">Заказать</a>
+    </article>
+  </section>
+  <section class="present">
+    <h2 class="visually-hidden">Подарок</h2>
+    <p class="present__description">Закажите все
+      и получите чехол для кота в подарок!
+    </p>
+  </section>
+</main>
+<footer class="footer">
+  <section class="footer__wrapper">
+    <article class="address footer__address">
+      <h2 class="visually-hidden">Адрес Интернет-магазин корма для котов "Cat Energy"</h2>
+      <p class="address__tagline">Приглашаем к сотрудничеству дилеров!</p>
+      <p class="address__direct-place">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+    </article>
+    <img class="footer__map" src="#">
+    <section class="feedback footer__feedback">
+      <h2 class="visually-hidden">Обратная связь</h2>
+      <a class="feedback__link" href="#">
+        <img class="feedback__logo" src="#">
+      </a>
+      <section class="social-network footer__social-network">
+        <h2 class="visually-hidden">Социальные сети</h2>
+        <a class="social-network__link" href="#"
+           aria-label="Переход в группу в социальной сети в контакте магазина 'Cat Energy' "></a>
+        <a class="social-network__link" href="#"
+           aria-label="Переход в группу в социальной сети в инстаграм магазина 'Cat Energy' "></a>
+        <a class="social-network__link" href="#"
+           aria-label="Переход в группу в социальной сети в фейсбук магазина 'Cat Energy' "></a>
+      </section>
+      <a class="feedback__word" href="#">HTML Academy</a>
+      <a class="feedback__icon" href="#"></a>
+    </section>
+  </section>
+</footer>
 </body>
 </html>
