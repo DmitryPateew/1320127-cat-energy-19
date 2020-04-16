@@ -1,10 +1,94 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title>Кэт энерджи: </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Кэт энерджи: подбор программы</title>
 </head>
 <body>
-
+<header class="header">
+  <section class="header__section">
+    <h2>Главное меню навигации</h2>
+    <a class="logo header__logo" href="#">
+      <img class="logo__img" src="#">
+    </a>
+    <nav class="main-nav header__main-nav">
+      <a class="main-nav__link" href="#">Главная</a>
+      <a class="main-nav__link" href="№">Каталог продукции</a>
+      <a class="main-nav__link" href="№">Подбор программы</a>
+    </nav>
+  </section>
+</header>
+<main class="main-selection">
+  <h1 class="visually-hidden">Подбор программы корма для котов "Cat Energy"</h1>
+  <h2 >Подбор программы</h2>
+  <form action="https://echo.htmlacademy.ru">
+    <fieldset class="about-cat">
+      <label class="about-cat__label" for="name">Имя:*</label>
+      <input class="about-cat__input" id="name" placeholder="Барсик">
+      <label class="about-cat__label" for="weight">Вес (кг):*</label>
+      <input class="about-cat__input" id="weight" placeholder="7">
+      <label class="about-cat__label" for="age">Возраст (лет):</label>
+      <input class="about-cat__input" id="age" placeholder="7">
+    </fieldset>
+    <fieldset class="program-selection">
+      <input class="program-selection__input" id="slimming" name="program-selection" type="radio">
+      <label class="program-selection__label" for="slimming">Похудение</label>
+      <input class="program-selection__input" id="mass-gain" name="program-selection" type="radio">
+      <label class="program-selection__label" for="mass-gain">Набор массы</label>
+      <input class="program-selection__input" id="advice" name="program-selection" type="radio">
+      <label class="program-selection__label" for="advice">Не знаю (Нужен ваш совет)</label>
+    </fieldset>
+    <fieldset class="owner-contacts">
+      <legend class="owner-contacts__title">Контактные данные (владельца кота)</legend>
+      <label class="owner-contacts__label" for="e-mail">E-mail:*</label>
+      <input class="owner-contacts__input" id="e-mail" placeholder="kuklachev@gmail.com">
+      <label class="owner-contacts__label" for="phone">Телефон:*</label>
+      <input class="owner-contacts__input" id="phone" placeholder="8 (960) 900-60-90">
+    </fieldset>
+    <fieldset class="comment">
+      <label class="comment__title" for="comment">Комментарий</label>
+      <textarea class="comment__input" id="comment" rows="5" cols="62"
+                placeholder="Расскажите обо всех повадках кота"></textarea>
+    </fieldset>
+    <fieldset class="additionally">
+      <legend class="additionally__title">Дополнительно</legend>
+      <input class="additionally__input" id="sweetener" type="checkbox" checked>
+      <label class="additionally__label" for="sweetener">Сахарозаменитель</label>
+      <input class="additionally__input" id="drinking-water" type="checkbox">
+      <label class="additionally__label" for="drinking-water">Питьевая вода</label>
+      <input class="additionally__input" id="milk" type="checkbox">
+      <label class="additionally__label" for="milk">Молоко</label>
+      <input class="additionally__input" id="vitamins" type="checkbox">
+      <label class="additionally__label" for="vitamins">Витамины</label>
+    </fieldset>
+    <button>Отправить заявку</button>
+    <p>* — Обязательные поля</p>
+  </form>
+</main>
+<footer class="footer">
+  <section class="footer__wrapper">
+    <article class="address footer__address">
+      <h2 class="visually-hidden">Адрес Интернет-магазин корма для котов "Cat Energy"</h2>
+      <p class="address__tagline">Приглашаем к сотрудничеству дилеров!</p>
+      <p class="address__direct-place">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+    </article>
+    <img class="footer__map" src="#">
+    <section class="feedback footer__feedback">
+      <h2 class="visually-hidden">Обратная связь</h2>
+      <a class="feedback__link" href="#">
+        <img class="feedback__logo" src="#">
+      </a>
+      <section class="social-network footer__social-network">
+        <h2 class="visually-hidden">Социальные сети</h2>
+        <a class="social-network__link" href="#" aria-label="Переход в группу в социальной сети в контакте магазина 'Cat Energy' "></a>
+        <a class="social-network__link" href="#" aria-label="Переход в группу в социальной сети в инстаграм магазина 'Cat Energy' "></a>
+        <a class="social-network__link" href="#" aria-label="Переход в группу в социальной сети в фейсбук магазина 'Cat Energy' "></a>
+      </section>
+      <a class="feedback__word" href="#">HTML Academy</a>
+      <a class="feedback__icon" href="#"></a>
+    </section>
+  </section>
+</footer>
 </body>
 </html>
