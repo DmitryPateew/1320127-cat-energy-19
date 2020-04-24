@@ -4,13 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Кэт энерджи: каталог продукции</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <header class="header">
   <section class="header__section">
-    <h2>Главное меню навигации</h2>
+    <h2 class="visually-hidden">Главное меню навигации</h2>
     <a class="logo header__logo" href="#">
-      <img class="logo__img" src="#">
+      <img class="logo__img" width="191" height="39px" src="../source/img/logo-mobile-header-svg.svg">
     </a>
     <nav class="main-nav header__main-nav">
       <a class="main-nav__link" href="#">Главная</a>
@@ -21,37 +22,39 @@
 </header>
 <main class="main-catalog">
   <h1 class="visually-hidden">Каталог продукции интернет-магазин корма для котов "Cat Energy"</h1>
-  <h2>Каталог продукции</h2>
+  <h2 class="main-catalog__title">Каталог продукции</h2>
   <section>
     <h3 class="visually-hidden">Список товаров интернет-магазин корма для котов "Cat Energy"</h3>
     <article class="card-product">
-      <img class="card-product__img" src="#">
-      <table>
-        <caption class="card-product__title">Cat Energy PRO 500 г</caption>
-        <tr>
-          <td class="card-product__capacity">Объем</td>
-          <td class="card-product__capacity-value">500 г</td>
-        </tr>
-        <tr>
-          <td class="card-product__taste">Вкус</td>
-          <td class="card-product__value">Курица</td>
-        </tr>
-        <tr>
-          <td class="card-product__price">Цена</td>
-          <td class="card-product__price-value">700 Р</td>
-        </tr>
-      </table>
+      <div class="card-product__wrap">
+        <img class="card-product__img" width="140" height="144" src="../source/img/chicken-small-mobile@2x.jpg">
+        <table class="card-product__table">
+          <caption class="card-product__title">Cat Energy PRO 500 г</caption>
+          <tr class="card-product__property">
+            <td class="card-product__description">Объем</td>
+            <td class="card-product__value">500 г</td>
+          </tr>
+          <tr class="card-product__property">
+            <td class="card-product__description">Вкус</td>
+            <td class="card-product__value">Курица</td>
+          </tr>
+          <tr class="card-product__property">
+            <td class="card-product__description">Цена</td>
+            <td class="card-product__value">700 Р.</td>
+          </tr>
+        </table>
+      </div>
       <a class="card-product__button" href="№">Заказать</a>
     </article>
   </section>
   <section class="more-goods">
     <h2 class="more-goods__title">Показать еще 100500 товаров</h2>
     <p class="more-goods__description">На самом деле вкусов гораздо больше!</p>
-    <a class="more-goods__button" href="#">Показать все</a>
+    <a class="more-goods__button" href="#">Показать&nbsp;все</a>
   </section>
   <section class="additional-goods">
     <h2 class="additional-goods__title">Дополнительные товары</h2>
-    <article class="additional-item additional-goods__item">
+    <article class="additional-item  additional-goods__item">
       <p class="additional-item__title">Сахарозаменитель</p>
       <p class="additional-item__capacity">1 упаковка (100 г)</p>
       <p class="additional-item__price">200 Р.</p>
