@@ -4,13 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Кэт энерджи: подбор программы</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <header class="header">
   <section class="header__section">
-    <h2>Главное меню навигации</h2>
+    <h2 class="visually-hidden">Главное меню навигации</h2>
     <a class="logo header__logo" href="#">
-      <img class="logo__img" src="#">
+      <img class="logo__img" width="191" height="39px" src="../source/img/logo-mobile-header-svg.svg">
     </a>
     <nav class="main-nav header__main-nav">
       <a class="main-nav__link" href="#">Главная</a>
@@ -21,23 +22,37 @@
 </header>
 <main class="main-selection">
   <h1 class="visually-hidden">Подбор программы корма для котов "Cat Energy"</h1>
-  <h2 >Подбор программы</h2>
+  <h2 class="main-selection__title">Подбор программы</h2>
+  <p class="main-selection__description">Заполните анкету и мы подберем
+    программу питания для вашего кота</p>
   <form action="https://echo.htmlacademy.ru">
     <fieldset class="about-cat">
-      <label class="about-cat__label" for="name">Имя:*</label>
-      <input class="about-cat__input" id="name" placeholder="Барсик">
-      <label class="about-cat__label" for="weight">Вес (кг):*</label>
-      <input class="about-cat__input" id="weight" placeholder="7">
-      <label class="about-cat__label" for="age">Возраст (лет):</label>
-      <input class="about-cat__input" id="age" placeholder="7">
+      <div>
+        <label class="about-cat__label" for="name">Имя:*</label>
+        <input class="about-cat__input" id="name" placeholder="Барсик">
+      </div>
+      <div>
+        <label class="about-cat__label" for="weight">Вес (кг):*</label>
+        <input class="about-cat__input" id="weight" placeholder="7">
+      </div>
+      <div>
+        <label class="about-cat__label" for="age">Возраст (лет):</label>
+        <input class="about-cat__input" id="age" placeholder="7">
+      </div>
     </fieldset>
     <fieldset class="program-selection">
-      <input class="program-selection__input" id="slimming" name="program-selection" type="radio">
-      <label class="program-selection__label" for="slimming">Похудение</label>
-      <input class="program-selection__input" id="mass-gain" name="program-selection" type="radio">
-      <label class="program-selection__label" for="mass-gain">Набор массы</label>
-      <input class="program-selection__input" id="advice" name="program-selection" type="radio">
-      <label class="program-selection__label" for="advice">Не знаю (Нужен ваш совет)</label>
+      <div class="program-selection__input-wrapper">
+        <input class="program-selection__input" id="slimming" name="program-selection" type="radio" checked>
+        <label class="program-selection__label" for="slimming">Похудение</label>
+      </div>
+      <div class="program-selection__input-wrapper">
+        <input class="program-selection__input" id="mass-gain" name="program-selection" type="radio">
+        <label class="program-selection__label" for="mass-gain">Набор массы</label>
+      </div>
+      <div class="program-selection__input-wrapper">
+        <input class="program-selection__input" id="advice" name="program-selection" type="radio">
+        <label class="program-selection__label" for="advice">Не знаю (Нужен ваш совет)</label>
+      </div>
     </fieldset>
     <fieldset class="owner-contacts">
       <legend class="owner-contacts__title">Контактные данные (владельца кота)</legend>
@@ -48,22 +63,30 @@
     </fieldset>
     <fieldset class="comment">
       <label class="comment__title" for="comment">Комментарий</label>
-      <textarea class="comment__input" id="comment" rows="5" cols="62"
+      <textarea class="comment__input" id="comment" rows="5" cols="52"
                 placeholder="Расскажите обо всех повадках кота"></textarea>
     </fieldset>
     <fieldset class="additionally">
       <legend class="additionally__title">Дополнительно</legend>
-      <input class="additionally__input" id="sweetener" type="checkbox" checked>
-      <label class="additionally__label" for="sweetener">Сахарозаменитель</label>
-      <input class="additionally__input" id="drinking-water" type="checkbox">
-      <label class="additionally__label" for="drinking-water">Питьевая вода</label>
-      <input class="additionally__input" id="milk" type="checkbox">
-      <label class="additionally__label" for="milk">Молоко</label>
-      <input class="additionally__input" id="vitamins" type="checkbox">
-      <label class="additionally__label" for="vitamins">Витамины</label>
+      <div class="additionally__input-wrapper">
+        <input class="additionally__input" id="sweetener" type="checkbox" checked>
+        <label class="additionally__label" for="sweetener">Сахарозаменитель</label>
+      </div>
+      <div class="additionally__input-wrapper">
+        <input class="additionally__input" id="drinking-water" type="checkbox">
+        <label class="additionally__label" for="drinking-water">Питьевая вода</label>
+      </div>
+      <div class="additionally__input-wrapper">
+        <input class="additionally__input" id="milk" type="checkbox">
+        <label class="additionally__label" for="milk">Молоко</label>
+      </div>
+      <div class="additionally__input-wrapper">
+        <input class="additionally__input" id="vitamins" type="checkbox">
+        <label class="additionally__label" for="vitamins">Витамины</label>
+      </div>
     </fieldset>
-    <button>Отправить заявку</button>
-    <p>* — Обязательные поля</p>
+    <button class="main-selection__button">Отправить заявку</button>
+    <p class="main-selection__required">* — Обязательные поля</p>
   </form>
 </main>
 <footer class="footer">
