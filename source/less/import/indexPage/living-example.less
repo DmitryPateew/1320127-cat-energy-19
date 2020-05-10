@@ -1,8 +1,32 @@
+@tablet-width: 768px;
+@desktop-width: 1200px;
+
 .living-example {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   background-color: #f2f2f2;
+}
+
+@media (min-width: @tablet-width) {
+  .living-example {
+    background-color: #ffffff;
+    border: 1px solid #f2f2f2;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .living-example {
+    justify-content: left;
+    background-color: #eaeaea;
+    border: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .living-example__wrapper {
+    padding-left: 110px;
+  }
 }
 
 .living-example__title {
@@ -14,6 +38,22 @@
   letter-spacing: normal;
   color: #111111;
   text-align: left;
+}
+
+@media (min-width: @tablet-width) {
+  .living-example__title {
+    font-size: 60px;
+    padding-right: 45vw;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .living-example__title {
+    position: absolute;
+    margin-top: -130px;
+    padding-left: 110px;
+    padding-right: 60vw;
+  }
 }
 
 .living-example__description {
@@ -28,6 +68,20 @@
   text-align: left;
 }
 
+@media (min-width: @tablet-width) {
+  .living-example__description {
+    max-width: 85vw;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .living-example__description {
+    width: 440px;
+  }
+}
+
 .living-example__cost {
   font-size: 14px;
   font-weight: normal;
@@ -37,4 +91,25 @@
   letter-spacing: normal;
   text-align: center;
   text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .living-example__cost {
+    width: 174px;
+    padding-left: 12vw;
+    padding-right: 30px;
+    padding-top: 20px;
+    font-size: 20px;
+    line-height: 30px;
+    color: #111111;
+    text-align: right;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .living-example__cost {
+    width: 430px;
+    padding-left: 0;
+    text-align: left;
+  }
 }

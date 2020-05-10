@@ -1,3 +1,16 @@
-.header {
-  background-color: white;
+@tablet-width: 768px;
+@desktop-width: 1200px;
+
+@media (min-width: @tablet-width) {
+  .header__section {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 29px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .header__section {
+    padding-top: 77px;
+  }
 }

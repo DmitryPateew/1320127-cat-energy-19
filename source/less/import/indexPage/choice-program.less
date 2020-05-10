@@ -1,5 +1,14 @@
+@tablet-width: 768px;
+@desktop-width: 1200px;
+
 .choice-program {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+@media (min-width: 554px) {
+  .choice-program {
+    justify-content: space-evenly;
+  }
 }

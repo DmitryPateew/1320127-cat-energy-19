@@ -1,7 +1,19 @@
+@tablet-width: 768px;
+@desktop-width: 1200px;
+
 .advantages {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+@media (min-width: @desktop-width) {
+  .advantages {
+    display: block;
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-bottom: 100px;
+  }
 }
 
 .advantages__title {
@@ -13,4 +25,16 @@
   letter-spacing: normal;
   color: #111111;
   text-align: left;
+}
+
+@media (min-width: @tablet-width) {
+  .advantages__title {
+    font-size: 60px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages__title {
+    padding-left: 40px;
+  }
 }

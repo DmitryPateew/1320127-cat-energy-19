@@ -1,3 +1,6 @@
+@tablet-width: 768px;
+@desktop-width: 1200px;
+
 .logo {
   display: flex;
   align-items: center;
@@ -5,4 +8,18 @@
   padding-top: 11px;
   padding-bottom: 15px;
   border-bottom: solid 1px #eaeaea;
+}
+
+@media (min-width: @tablet-width) {
+  .logo {
+    align-items: flex-start;
+    justify-content: left;
+    border: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .logo {
+    padding-left: 80px;
+  }
 }

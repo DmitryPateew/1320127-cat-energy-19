@@ -1,4 +1,59 @@
+@tablet-width: 768px;
+@desktop-width: 1200px;
+
+.additional-item {
+  max-width: 280px;
+}
+
+@media (min-width: @tablet-width) {
+  .additional-item {
+    max-width: none;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding-left: 38px;
+    padding-right: 38px;
+    padding-bottom: 40px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .additional-item {
+    width: 895px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-left: none;
+    border-right: none;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.additional-item__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 14px;
+}
+
+@media (min-width: @tablet-width) {
+  .additional-item__wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .additional-item__wrapper {
+    width: 611px;
+    align-items: start;
+  }
+}
+
 .additional-item__title {
+  flex-grow: 2;
+  padding-right: 130px;
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
@@ -8,6 +63,32 @@
   text-align: left;
   color: #222222;
   text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .additional-item__title {
+    font-size: 20px;
+    line-height: 20px;
+    flex-grow: 2;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .additional-item__title {
+    width: 162px;
+    padding-right: 0;
+    flex-grow: 0;
+  }
+}
+
+.additional-item__title--short-word {
+  padding-right: 190px;
+}
+
+@media (min-width: @desktop-width) {
+  .additional-item__title--short-word {
+    padding-right: 0;
+  }
 }
 
 .additional-item__capacity {
@@ -22,6 +103,19 @@
   color: #444444;
 }
 
+@media (min-width: @tablet-width) {
+  .additional-item__capacity {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .additional-item__capacity {
+    width: 132px;
+  }
+}
+
 .additional-item__price {
   font-family: "Arial", "Helvetica", sans-serif;
   font-size: 14px;
@@ -32,6 +126,23 @@
   letter-spacing: normal;
   text-align: right;
   color: #444444;
+}
+
+@media (min-width: @tablet-width) {
+  .additional-item__price {
+    font-size: 16px;
+    line-height: 20px;
+    padding-left: 52px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .additional-item__price {
+    width: 44px;
+    padding-right: 0;
+    padding-left: 0;
+    text-align: left;
+  }
 }
 
 .additional-item__button {
@@ -49,4 +160,18 @@
   color: #ffffff;
   text-transform: uppercase;
   background-color: #68b738;
+}
+
+@media (min-width: @tablet-width) {
+  .additional-item__button {
+    padding-left: 286px;
+    padding-right: 286px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .additional-item__button {
+    padding-left: 92px;
+    padding-right: 92px;
+  }
 }

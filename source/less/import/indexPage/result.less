@@ -1,7 +1,16 @@
+@tablet-width: 768px;
+@desktop-width: 1200px;
+
 .result {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+@media (min-width: @tablet-width) {
+  .result {
+    padding-left: 30px;
+  }
 }
 
 .result__value {
@@ -23,6 +32,15 @@
   border-radius: 5px;
 }
 
+@media (min-width: @tablet-width) {
+  .result__value {
+    padding-left: 58px;
+    padding-right: 57px;
+    font-size: 30px;
+    line-height: 37px;
+  }
+}
+
 .result__description {
   margin-top: -35px;
   margin-left: 15px;
@@ -38,4 +56,20 @@
   line-height: 12px;
   letter-spacing: normal;
   text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .result__description {
+    max-width: 97px;
+    font-size: 14px;
+    line-height: 14px;
+    background-color: #ffffff;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .result__description {
+    background-color: #eaeaea;
+    max-width: 130px;
+  }
 }
