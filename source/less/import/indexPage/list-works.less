@@ -1,9 +1,77 @@
+@tablet-width: 768px;
+@desktop-width: 1200px;
+
 .list-works {
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
   justify-content: center;
   padding-left: 0;
+}
+
+.list-works__item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: start;
+}
+
+@media (min-width: @tablet-width) {
+  .list-works__item {
+    display: block;
+  }
+}
+
+.list-works__icon {
+  margin-top: 15px;
+  margin-right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #68b738;
+}
+
+@media (min-width: @tablet-width) {
+  .list-works__icon {
+    margin-top: 0;
+    margin-right: 0;
+    display: block;
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.list-works__icon--leaf {
+  background-image: url("../img/icon/adventage-icon/advantage-leaf@2x.png");
+  background-repeat: no-repeat;
+  background-size: 46px 49px;
+  background-position: center;
+}
+
+.list-works__icon--powder {
+  background-image: url("../img/icon/adventage-icon/advantage-powder@2x.png");
+  background-repeat: no-repeat;
+  background-size: 46px 49px;
+  background-position: center;
+}
+
+.list-works__icon--dining {
+  background-image: url("../img/icon/adventage-icon/advantage-dining@2x.png");
+  background-repeat: no-repeat;
+  background-size: 46px 49px;
+  background-position: center;
+}
+
+.list-works__icon--clock {
+  background-image: url("../img/icon/adventage-icon/advantage-clock@2x.png");
+  background-repeat: no-repeat;
+  background-size: 46px 49px;
+  background-position: center;
+}
+
+@media (min-width: @tablet-width) {
+  .list-works {
+    justify-content: space-evenly;
+  }
 }
 
 .list-works__description {
@@ -15,4 +83,37 @@
   font-style: normal;
   line-height: 18px;
   letter-spacing: normal;
+}
+
+@media (min-width: @tablet-width) {
+  .list-works__description {
+    max-width: 240px;
+    font-size: 16px;
+    line-height: 24px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 120px;
+  }
+}
+
+.list-works__numbers {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .list-works__numbers {
+    display: block;
+    position: absolute;
+    margin-top: -365px;
+    margin-left: 120px;
+    font-size: 281px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 281px;
+    letter-spacing: normal;
+    text-align: left;
+    color: #f2f2f2;
+    z-index: -50;
+  }
 }

@@ -1,6 +1,15 @@
+@tablet-width: 768px;
+@desktop-width: 1200px;
+
 .main-catalog {
   padding-left: 22px;
   padding-right: 22px;
+}
+
+@media (min-width: @desktop-width) {
+  .main-catalog {
+    padding-left: 110px;
+  }
 }
 
 .main-catalog__title {
@@ -12,4 +21,27 @@
   line-height: 60px;
   letter-spacing: normal;
   color: #111111;
+}
+
+@media (min-width: @tablet-width) {
+  .main-catalog__title {
+    font-size: 60px;
+    padding-left: 30px;
+  }
+}
+
+.main-catalog__items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: start;
+}
+
+@media (min-width: @desktop-width) {
+  .main-catalog__add-present-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
 }

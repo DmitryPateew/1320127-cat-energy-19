@@ -1,6 +1,28 @@
+@tablet-width: 768px;
+@desktop-width: 1200px;
+
 .more-goods {
-  padding-top: 20px;
+  max-width: 280px;
+  padding-top: 90px;
   padding-bottom: 20px;
+  background-image: url("../img/icon/catalog-icon/plus-mobile-svg.svg");
+  background-repeat: no-repeat;
+  background-size: 31px 31px;
+  background-position: center 40px;
+}
+
+@media (min-width: @tablet-width) {
+  .more-goods {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding-left: 25px;
+    padding-right: 25px;
+    background-size: 61px 61px;
+    padding-bottom: 30px;
+  }
 }
 
 .more-goods__title {
@@ -15,6 +37,14 @@
   color: #111111;
 }
 
+@media (min-width: @tablet-width) {
+  .more-goods__title {
+    max-width: 134px;
+    font-size: 20px;
+    padding-top: 50px;
+  }
+}
+
 .more-goods__description {
   font-family: "Arial", "Helvetica", sans-serif;
   font-size: 12px;
@@ -26,6 +56,20 @@
   text-align: center;
   color: #444444;
   padding-bottom: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .more-goods__description {
+    width: 168px;
+    font-size: 16px;
+    padding-bottom: 70px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .more-goods__description {
+    width: 193px;
+  }
 }
 
 .more-goods__button {
@@ -43,4 +87,11 @@
   text-align: center;
   color: #444444;
   text-transform: uppercase;
+}
+
+@media (min-width: @desktop-width) {
+  .more-goods__button {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }

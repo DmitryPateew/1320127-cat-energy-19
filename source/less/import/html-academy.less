@@ -1,0 +1,38 @@
+@tablet-width: 768px;
+@desktop-width: 1200px;
+
+.html-academy {
+  width: 90vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-top: 1px solid rgba(17, 17, 17, 0.1);
+}
+
+@media (min-width: @tablet-width) {
+  .html-academy {
+    border: none;
+    width: 162px;
+    padding-right: 35px;
+  }
+}
+
+.html-academy__icon {
+  padding-bottom: 30px;
+}
+
+.html-academy__word {
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 16px;
+  letter-spacing: normal;
+  text-align: left;
+  color: #444444;
+}

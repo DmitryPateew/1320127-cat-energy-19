@@ -1,4 +1,8 @@
+@tablet-width: 768px;
+@desktop-width: 1200px;
+
 .card-product {
+  max-width: 300px;
   font-family: "Arial", "Helvetica", sans-serif;
   font-size: 12px;
   font-weight: normal;
@@ -6,13 +10,43 @@
   font-style: normal;
   line-height: 16px;
   letter-spacing: normal;
+  padding-bottom: 25px;
+  padding-top: 25px;
+}
+
+@media (min-width: @tablet-width) {
+  .card-product {
+    background-color: #eaeaea;
+    font-size: 16px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    margin-bottom: 60px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .card-product {
+    padding-left: 38px;
+    padding-right: 38px;
+    margin-right: 60px;
+  }
 }
 
 .card-product__wrap {
+  max-width: 280px;
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: space-evenly;
+}
+
+@media (min-width: @tablet-width) {
+  .card-product__wrap {
+    max-width: none;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .card-product__img {
@@ -24,11 +58,37 @@
   margin-bottom: 23px;
 }
 
+@media (min-width: @tablet-width) {
+  .card-product__table {
+    width: 250px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .card-product__table {
+    width: 170px;
+  }
+}
+
 .card-product__property {
   min-width: 100px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+@media (min-width: @tablet-width) {
+  .card-product__property {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .card-product__property--last-record {
+    margin-bottom: 20px;
+  }
 }
 
 .card-product__description {
@@ -53,6 +113,14 @@
   text-transform: uppercase;
 }
 
+@media (min-width: @tablet-width) {
+  .card-product__title {
+    max-width: 126px;
+    font-size: 20px;
+    text-align: center;
+  }
+}
+
 .card-product__button {
   background-color: #68b738;
   padding-top: 12px;
@@ -69,4 +137,18 @@
   text-align: center;
   color: white;
   text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .card-product__button {
+    padding-left: 94px;
+    padding-right: 94px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .card-product__button {
+    padding-left: 54px;
+    padding-right: 54px;
+  }
 }
