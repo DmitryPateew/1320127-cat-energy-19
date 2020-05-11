@@ -1,9 +1,27 @@
+@tablet-width: 768px;
+@desktop-width: 1200px;
+
 .program-selection {
   display: flex;
   flex-direction: column;
   border: none;
   border-bottom: solid 1px #ededed;
   padding-top: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .program-selection {
+    margin-left: auto;
+    margin-right: auto;
+    width: 85vw;
+    border: solid 1px #ededed;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .program-selection {
+    max-width: 570px;
+  }
 }
 
 .program-selection__input-wrapper {
@@ -21,4 +39,11 @@
   text-align: left;
   color: #222222;
   text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .program-selection__label {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
