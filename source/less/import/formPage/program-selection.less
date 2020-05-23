@@ -6,21 +6,23 @@
   flex-direction: column;
   border: none;
   border-bottom: solid 1px #ededed;
-  padding-top: 20px;
+  padding-top: 24px;
+  padding-bottom: 7px;
 }
 
 @media (min-width: @tablet-width) {
   .program-selection {
+    padding-top: 33px;
     margin-left: auto;
     margin-right: auto;
-    width: 85vw;
+    width: 78vw;
     border: solid 1px #ededed;
   }
 }
 
 @media (min-width: @desktop-width) {
   .program-selection {
-    max-width: 570px;
+    width: 550px;
   }
 }
 
@@ -28,7 +30,74 @@
   margin-bottom: 22px;
 }
 
+@media (min-width: @tablet-width) {
+  .program-selection__input-wrapper {
+    margin-bottom: 32px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .program-selection__input-wrapper {
+    padding-top: 5px;
+    margin-bottom: 27px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .program-selection__input-wrapper--last {
+    margin-bottom: 24px;
+  }
+}
+
+.program-selection__input {
+  display: none;
+}
+
+.program-selection__ring {
+  position: absolute;
+  margin-left: 3px;
+  margin-top: -5px;
+  width: 30px;
+  height: 30px;
+  border: solid 1px #ededed;
+  border-radius: 50%;
+}
+
+@media (min-width: @tablet-width) {
+  .program-selection__ring {
+    width: 40px;
+    height: 40px;
+    margin-left: 13px;
+    margin-top: -7px;
+  }
+}
+
+.program-selection__check {
+  display: none;
+  position: absolute;
+  margin-top: 5px;
+  margin-left: 13px;
+  width: 12px;
+  height: 12px;
+  background-color: #68b738;
+  border-radius: 50%;
+}
+
+@media (min-width: @tablet-width) {
+  .program-selection__check {
+    width: 18px;
+    height: 18px;
+    margin-top: 5px;
+    margin-left: 25px;
+  }
+}
+
+.program-selection__input:checked ~ .program-selection__check {
+  display: block;
+}
+
 .program-selection__label {
+  padding-left: 50px;
   padding-bottom: 26px;
   font-size: 16px;
   font-weight: normal;
@@ -45,5 +114,12 @@
   .program-selection__label {
     font-size: 20px;
     line-height: 20px;
+    padding-left: 74px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .program-selection__label {
+    padding-left: 72px;
   }
 }

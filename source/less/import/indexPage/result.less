@@ -2,6 +2,7 @@
 @desktop-width: 1200px;
 
 .result {
+  width: 87.5vw;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -9,16 +10,23 @@
 
 @media (min-width: @tablet-width) {
   .result {
-    padding-left: 30px;
+    width: 367px;
+    margin-bottom: 236px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .result {
+    margin-bottom: 5px;
   }
 }
 
 .result__value {
-  margin-right: 32px;
-  padding-top: 17px;
+  margin-top: 25px;
+  margin-bottom: 17px;
+  min-width: 122px;
+  padding-top: 13px;
   padding-bottom: 17px;
-  padding-left: 30px;
-  padding-right: 30px;
   font-size: 24px;
   font-weight: normal;
   font-stretch: normal;
@@ -34,16 +42,20 @@
 
 @media (min-width: @tablet-width) {
   .result__value {
-    padding-left: 58px;
-    padding-right: 57px;
+    min-width: 162px;
     font-size: 30px;
     line-height: 37px;
   }
 }
 
+.result__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .result__description {
-  margin-top: -35px;
-  margin-left: 15px;
+  margin-top: -28px;
   max-width: 57px;
   padding-left: 8px;
   padding-right: 8px;
@@ -60,7 +72,8 @@
 
 @media (min-width: @tablet-width) {
   .result__description {
-    max-width: 97px;
+    margin-top: -24px;
+    max-width: 130px;
     font-size: 14px;
     line-height: 14px;
     background-color: #ffffff;
@@ -71,5 +84,39 @@
   .result__description {
     background-color: #eaeaea;
     max-width: 130px;
+  }
+}
+
+.result__cost {
+  margin-top: 0;
+  padding-top: 8px;
+  padding-bottom: 25px;
+  padding-right: 20px;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 20px;
+  letter-spacing: normal;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .result__cost {
+    width: 174px;
+    padding-top: 30px;
+    font-size: 20px;
+    line-height: 30px;
+    color: #111111;
+    text-align: right;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .result__cost {
+    width: 430px;
+    padding-left: 0;
+    text-align: left;
   }
 }

@@ -1,14 +1,23 @@
 @tablet-width: 768px;
 @desktop-width: 1200px;
 
+@media (min-width: @tablet-width) {
+  .main-selection {
+    padding-bottom: 58px;
+  }
+}
+
 @media (min-width: @desktop-width) {
   .main-selection {
-    padding-left: 112px;
+    padding-left: 108px;
+    padding-bottom: 69px;
   }
 }
 
 .main-selection__title {
-  padding-right: 15px;
+  margin-top: 16px;
+  margin-bottom: 25px;
+  padding-right: 20px;
   font-size: 36px;
   font-weight: normal;
   font-stretch: normal;
@@ -21,28 +30,46 @@
 
 @media (min-width: @tablet-width) {
   .main-selection__title {
+    margin-top: 11px;
     font-size: 60px;
-    padding-left: 32px;
+    padding-left: 30px;
+    padding-bottom: 30px;
     text-align: left;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-selection__title {
+    padding-left: 0;
+    margin-top: 14px;
   }
 }
 
 @media (min-width: @tablet-width) {
   .main-selection__button-wrapper {
     padding-left: 71px;
-    width: 60vw;
+    width: 68vw;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-selection__button-wrapper {
+    padding-left: 0;
   }
 }
 
 .main-selection__button {
+  margin-left: 20px;
+  margin-bottom: 5px;
   font-family: "Oswald", "Times New Roman", serif;
   padding-top: 12px;
   padding-bottom: 12px;
   padding-left: 79px;
-  padding-right: 79px;
+  padding-right: 78px;
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
@@ -58,22 +85,25 @@
 
 @media (min-width: @tablet-width) {
   .main-selection__button {
+    margin-left: 0;
     font-size: 20px;
     padding-left: 64px;
-    padding-right: 64px;
+    padding-right: 65px;
     padding-top: 16px;
     padding-bottom: 16px;
   }
 }
 
-@media (min-width: @tablet-width) {
+@media (min-width: @desktop-width) {
   .main-selection__button {
-    padding-left: 207px;
-    padding-right: 207px;
+    padding-left: 210px;
+    padding-right: 204px;
+    margin-left: 3px;
   }
 }
 
 .main-selection__required {
+  padding-bottom: 17px;
   font-family: "Arial", "Helvetica", sans-serif;
   font-size: 14px;
   font-weight: normal;
@@ -91,9 +121,16 @@
   }
 }
 
+@media (min-width: @desktop-width) {
+  .main-selection__required {
+    padding-right: 148px;
+  }
+}
+
 .main-selection__description {
   max-width: 230px;
   padding-left: 20px;
+  padding-bottom: 19px;
   font-size: 14px;
   font-weight: normal;
   font-stretch: normal;
@@ -107,9 +144,16 @@
 
 @media (min-width: @tablet-width) {
   .main-selection__description {
-    width: 335px;
+    max-width: 335px;
     padding-left: 70px;
     font-size: 20px;
     line-height: 30px;
+    padding-bottom: 40px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-selection__description {
+    padding-left: 0;
   }
 }

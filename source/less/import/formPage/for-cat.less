@@ -1,9 +1,18 @@
+@tablet-width: 768px;
 @desktop-width: 1200px;
+
+@media (min-width: @tablet-width) {
+  .for-cat {
+    padding-bottom: 45px;
+  }
+}
 
 @media (min-width: @desktop-width) {
   .for-cat {
     width: 90vw;
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 15px;
   }
 }

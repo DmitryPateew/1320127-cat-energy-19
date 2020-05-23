@@ -1,31 +1,48 @@
 @tablet-width: 768px;
 @desktop-width: 1200px;
+@retina-dpi: 144dpi;
+@retina-dppx: 1.5dppx;
 
 .present {
   max-width: 280px;
-  background-image: url("../img/content/gift-photo-mobile@2x.jpg");
-  background-size: 280px 289px;
+  margin-bottom: 35px;
+  background-image: url("../img/backgraund/catalog-page/gift-photo-mobile@1x.jpg");
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/backgraund/catalog-page/gift-photo-mobile@2x.jpg");
+    background-size: 280px 289px;
+  }
 }
+
 
 @media (min-width: @tablet-width) {
   .present {
     max-width: 708px;
-    background-image: url("../img/content/gift-photo-tablet@2x.jpg");
+    margin-bottom: 74px;
+    background-image: url("../img/backgraund/catalog-page/gift-photo-tablet@1x.jpg");
     background-repeat: no-repeat;
-    background-size: 708px 200px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/backgraund/catalog-page/gift-photo-tablet@2x.jpg");
+      background-size: 708px 200px;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
   .present {
     width: 245px;
-    background-image: url("../img/content/gift-photo-mobile@2x.jpg");
-    background-size: 245px 289px;
+    background-image: url("../img/backgraund/catalog-page/gift-photo-mobile@1x.jpg");
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/backgraund/catalog-page/gift-photo-mobile@2x.jpg");
+      background-size: 245px 289px;
+    }
   }
 }
 
 .present__description {
-  padding-top: 190px;
+  padding-top: 188px;
   padding-bottom: 43px;
   max-width: 163px;
   background-image: url("../img/icon/catalog-icon/gift-svg.svg");
@@ -45,10 +62,10 @@
 
 @media (min-width: @tablet-width) {
   .present__description {
-    padding-top: 75px;
+    padding-top: 73px;
     padding-bottom: 69px;
     text-align: left;
-    background-position: 0 65px;
+    background-position: 8px 65px;
     padding-left: 340px;
     padding-right: 40px;
     margin-bottom: 55px;
@@ -57,12 +74,12 @@
 
 @media (min-width: @desktop-width) {
   .present__description {
-    padding-top: 190px;
-    padding-bottom: 43px;
+    padding-top: 171px;
+    padding-bottom: 39px;
     padding-left: 0;
     padding-right: 0;
     text-align: center;
-    background-position: center 65px;
+    background-position: center 49px;
     margin-bottom: 0;
   }
 }

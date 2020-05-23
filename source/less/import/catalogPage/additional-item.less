@@ -3,6 +3,9 @@
 
 .additional-item {
   max-width: 280px;
+  padding-bottom: 24px;
+  border-top: 1px solid rgba(17, 17, 17, 0.1);
+  border-bottom: 1px solid rgba(17, 17, 17, 0.1);
 }
 
 @media (min-width: @tablet-width) {
@@ -11,13 +14,14 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding-left: 38px;
     padding-right: 38px;
-    padding-bottom: 40px;
+    padding-bottom: 37px;
+    padding-top: 15px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .additional-item {
-    width: 895px;
+    width: 795px;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
@@ -29,11 +33,17 @@
   }
 }
 
+@media (min-width: 1350px) {
+  .additional-item {
+    width: 895px;
+  }
+}
+
 .additional-item__wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-bottom: 14px;
+  padding-bottom: 12px;
 }
 
 @media (min-width: @tablet-width) {
@@ -41,6 +51,7 @@
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
+    padding-bottom: 12px;
   }
 }
 
@@ -48,11 +59,15 @@
   .additional-item__wrapper {
     width: 611px;
     align-items: start;
+    padding-bottom: 3px;
   }
 }
 
 .additional-item__title {
   flex-grow: 2;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 12px;
   padding-right: 130px;
   font-size: 16px;
   font-weight: normal;
@@ -67,6 +82,7 @@
 
 @media (min-width: @tablet-width) {
   .additional-item__title {
+    padding-top: 10px;
     font-size: 20px;
     line-height: 20px;
     flex-grow: 2;
@@ -78,6 +94,7 @@
     width: 162px;
     padding-right: 0;
     flex-grow: 0;
+    padding-top: 8px;
   }
 }
 
@@ -105,6 +122,8 @@
 
 @media (min-width: @tablet-width) {
   .additional-item__capacity {
+    margin-top: 12px;
+    margin-bottom: 20px;
     font-size: 16px;
     line-height: 20px;
   }
@@ -113,6 +132,7 @@
 @media (min-width: @desktop-width) {
   .additional-item__capacity {
     width: 132px;
+    padding-left: 53px;
   }
 }
 
@@ -146,10 +166,10 @@
 }
 
 .additional-item__button {
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   padding-left: 110px;
-  padding-right: 110px;
+  padding-right: 109px;
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
@@ -171,6 +191,7 @@
 
 @media (min-width: @desktop-width) {
   .additional-item__button {
+    padding-top: 10px;
     padding-left: 92px;
     padding-right: 92px;
   }

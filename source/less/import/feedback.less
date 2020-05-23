@@ -3,7 +3,7 @@
 
 .feedback {
   background-color: #f2f2f2;
-  padding-top: 40px;
+  padding-top: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -15,11 +15,30 @@
     align-items: baseline;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-bottom: 40px;
   }
 }
 
+@media (min-width: @desktop-width) {
+  .feedback {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+}
+
+.feedback__link {
+  width: 87.5vw;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 31px;
+  border-bottom: 1px solid rgba(17, 17, 17, 0.1);
+}
+
+
 @media (min-width: @tablet-width) {
   .feedback__link {
+    width: auto;
     padding-left: 31px;
+    border: none;
   }
 }
