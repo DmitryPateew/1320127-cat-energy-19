@@ -21,10 +21,17 @@
 }
 
 .additionally__wrap {
+  width: 50vw;
   padding-left: 2px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+@media (min-width: 350px) {
+  .additionally__wrap {
+    width: 90vw;
+  }
 }
 
 @media (min-width: @tablet-width) {
