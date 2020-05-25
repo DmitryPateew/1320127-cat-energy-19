@@ -76,7 +76,7 @@ gulp.task("sprite", function () {
 
 gulp.task("copy",function(){
   return gulp.src("source/**/*")
-    .pipe(gulp.dest("source/build"));
+    .pipe(gulp.dest("build"));
 });
 
 gulp.task("build", gulp.series("css","copy"));
