@@ -1,5 +1,5 @@
 @tablet-width: 768px;
-@desktop-width: 1200px;
+@desktop-width: 1300px;
 @retina-dpi: 144dpi;
 @retina-dppx: 1.5dppx;
 
@@ -7,13 +7,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 25px;
+  padding-bottom: 27px;
   color: #ffffff;
-  background-image: url("../img/backgraund/index-page/index-background-mobile@1x.jpg");
+  background-image: url("../img/backgraund/index-page/index-background-mobile@1x.jpg"), linear-gradient(180deg, rgba(104, 183, 56, 1) 61%, transparent 61%);
   background-repeat: no-repeat;
+  background-position: center top;
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-    background-image: url("../img/backgraund/index-page/index-background-mobile@2x.jpg");
+    background-image: url("../img/backgraund/index-page/index-background-mobile@2x.jpg"), linear-gradient(180deg, rgba(104, 183, 56, 1) 61%, transparent 61%);
     background-size: 100vw 95vw;
   }
 }
@@ -29,11 +30,30 @@
 
 @media (min-width: @desktop-width) {
   .presentation-goods {
-    padding-bottom: 353px;
+    width: 1220px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 353px;
+  }
+}
+
+@media (min-width: 1301px) {
+  .presentation-goods {
+    &::before {
+      content: "";
+      position: absolute;
+      margin-left: 1245px;
+      margin-top: -180px;
+      display: block;
+      width: calc((100vw - 1300px) / 2);
+      height: 634px;
+      background-color: #68b738;
+    }
   }
 }
 
 .presentation-goods__title {
+  width: 250px;
   margin-top: 0;
   padding-top: 27px;
   margin-bottom: 0;
@@ -62,7 +82,7 @@
 @media (min-width: @desktop-width) {
   .presentation-goods__title {
     padding-top: 45px;
-    padding-left: 162px;
+    padding-left: 65px;
   }
 }
 
@@ -91,17 +111,19 @@
 
 @media (min-width: @desktop-width) {
   .presentation-goods__description {
-    padding-left: 162px;
+    padding-left: 66px;
     padding-top: 12px;
   }
 }
 
 .presentation-goods__img {
   padding-top: 15px;
+  height: 270px;
 }
 
 @media (min-width: @tablet-width) {
   .presentation-goods__img {
+    height: 609px;
     padding-top: 0;
   }
 }
@@ -110,7 +132,7 @@
   .presentation-goods__img {
     position: absolute;
     height: 499px;
-    margin-left: 530px;
+    margin-left: 435px;
     margin-top: -283px;
   }
 }
@@ -151,6 +173,6 @@
 @media (min-width: @desktop-width) {
   .presentation-goods__button {
     margin-top: 281px;
-    margin-left: 162px;
+    margin-left: 66px;
   }
 }

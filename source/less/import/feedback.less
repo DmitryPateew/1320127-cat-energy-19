@@ -1,16 +1,19 @@
 @tablet-width: 768px;
-@desktop-width: 1200px;
+@desktop-width: 1300px;
 
 .feedback {
   background-color: #f2f2f2;
-  padding-top: 20px;
+}
+
+.feedback__wrapper {
+  padding-top: 45px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 @media (min-width: @tablet-width) {
-  .feedback {
+  .feedback__wrapper {
     padding-top: 51px;
     flex-direction: row;
     flex-wrap: wrap;
@@ -21,9 +24,12 @@
 }
 
 @media (min-width: @desktop-width) {
-  .feedback {
-    padding-left: 110px;
-    padding-right: 110px;
+  .feedback__wrapper {
+    width: 1220px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 

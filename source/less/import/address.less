@@ -1,5 +1,13 @@
 @tablet-width: 768px;
-@desktop-width: 1200px;
+@desktop-width: 1300px;
+
+@media (min-width: @desktop-width) {
+  .footer__address-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1220px;
+  }
+}
 
 .address {
   padding-top: 14px;
@@ -22,7 +30,7 @@
 @media (min-width: @desktop-width) {
   .address {
     position: absolute;
-    width: 39.5vw;
+    width: 570px;
     justify-content: space-evenly;
     padding-left: 0;
     padding-right: 0;
@@ -30,7 +38,6 @@
     padding-bottom: 40px;
     background-color: #ffffff;
     margin-top: 95px;
-    margin-left: 110px;
     z-index: 3500;
   }
 }

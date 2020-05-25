@@ -1,5 +1,5 @@
 @tablet-width: 768px;
-@desktop-width: 1200px;
+@desktop-width: 1300px;
 
 .main-nav {
   display: flex;
@@ -17,22 +17,16 @@
 
 @media (min-width: @desktop-width) {
   .main-nav {
+    padding-left: 535px;
+    margin-right: 4px;
     font-size: 20px;
     line-height: 25px;
     justify-content: space-between;
-    padding-right: 10vw;
-  }
-}
-
-@media (min-width: 1372px) {
-  .main-nav {
-    padding-left: 33vw;
-    padding-right: 7.6vw;
   }
 }
 
 .main-nav__link {
-  font-family: "Oswald", "Times New Roman", serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 20px;
   font-weight: 500;
   color: #111111;
@@ -63,8 +57,14 @@
 }
 
 @media (min-width: @tablet-width) {
-  .main-nav_link--active {
+  .main-nav__link--active {
     border-bottom: solid 2px #68b738;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__link--active {
+    border-bottom: solid 2px #ffffff;
   }
 }
 
@@ -75,13 +75,7 @@
 }
 
 @media (min-width: @desktop-width) {
-  .main-nav_link--active {
-    border-bottom: solid 2px #ffffff;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .main-nav_link--active-catalog {
+  .main-nav__link--active-catalog {
     border-bottom: solid 2px #68b738;
   }
 }

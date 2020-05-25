@@ -1,5 +1,5 @@
 @tablet-width: 768px;
-@desktop-width: 1200px;
+@desktop-width: 1300px;
 
 @media (min-width: @tablet-width) {
   .main-selection {
@@ -9,7 +9,6 @@
 
 @media (min-width: @desktop-width) {
   .main-selection {
-    padding-left: 108px;
     padding-bottom: 69px;
   }
 }
@@ -40,13 +39,28 @@
 
 @media (min-width: @desktop-width) {
   .main-selection__title {
+    padding-right: 794px;
     padding-left: 0;
     margin-top: 14px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+}
+
+
+@media (min-width: 360px) {
+  .main-selection__button-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 320px;
   }
 }
 
 @media (min-width: @tablet-width) {
   .main-selection__button-wrapper {
+    margin-left: 0;
+    margin-right: 0;
     padding-left: 71px;
     width: 68vw;
     display: flex;
@@ -58,6 +72,9 @@
 
 @media (min-width: @desktop-width) {
   .main-selection__button-wrapper {
+    width: 1220px;
+    margin-left: auto;
+    margin-right: auto;
     padding-left: 0;
   }
 }
@@ -65,7 +82,7 @@
 .main-selection__button {
   margin-left: 20px;
   margin-bottom: 5px;
-  font-family: "Oswald", "Times New Roman", serif;
+  font-family: "Oswald", "Arial", sans-serif;
   padding-top: 12px;
   padding-bottom: 12px;
   padding-left: 79px;
@@ -123,7 +140,7 @@
 
 @media (min-width: @desktop-width) {
   .main-selection__required {
-    padding-right: 148px;
+    padding-right: 390px;
   }
 }
 
@@ -155,5 +172,8 @@
 @media (min-width: @desktop-width) {
   .main-selection__description {
     padding-left: 0;
+    padding-right: 898px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

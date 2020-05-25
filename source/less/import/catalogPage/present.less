@@ -1,9 +1,11 @@
 @tablet-width: 768px;
-@desktop-width: 1200px;
+@desktop-width: 1300px;
 @retina-dpi: 144dpi;
 @retina-dppx: 1.5dppx;
 
 .present {
+  margin-left: auto;
+  margin-right: auto;
   max-width: 280px;
   margin-bottom: 35px;
   background-image: url("../img/backgraund/catalog-page/gift-photo-mobile@1x.jpg");
@@ -13,7 +15,6 @@
     background-size: 280px 289px;
   }
 }
-
 
 @media (min-width: @tablet-width) {
   .present {
@@ -31,6 +32,8 @@
 
 @media (min-width: @desktop-width) {
   .present {
+    margin-right: 0;
+    margin-left: 0;
     width: 245px;
     background-image: url("../img/backgraund/catalog-page/gift-photo-mobile@1x.jpg");
 

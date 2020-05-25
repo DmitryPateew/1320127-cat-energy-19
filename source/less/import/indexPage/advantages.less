@@ -1,5 +1,5 @@
 @tablet-width: 768px;
-@desktop-width: 1200px;
+@desktop-width: 1300px;
 
 .advantages {
   display: flex;
@@ -16,12 +16,22 @@
   }
 }
 
+@media (min-width: 900px) {
+  .advantages {
+    justify-content: space-evenly;
+    padding-right: 0;
+  }
+}
+
 @media (min-width: @desktop-width) {
   .advantages {
+    width: 1220px;
+    margin-right: auto;
+    margin-left: auto;
     display: block;
     padding-top: 26px;
-    padding-left: 110px;
-    padding-right: 95px;
+    padding-right: 0;
+    padding-left: 0;
     padding-bottom: 110px;
   }
 }
@@ -50,5 +60,6 @@
 @media (min-width: @desktop-width) {
   .advantages__title {
     padding-left: 0;
+    padding-bottom: 60px;
   }
 }

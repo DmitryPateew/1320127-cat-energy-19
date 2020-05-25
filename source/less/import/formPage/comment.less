@@ -1,5 +1,5 @@
 @tablet-width: 768px;
-@desktop-width: 1200px;
+@desktop-width: 1300px;
 
 .comment {
   border: none;
@@ -16,6 +16,9 @@
 
 @media (min-width: @desktop-width) {
   .comment {
+    width: 1220px;
+    margin-left: auto;
+    margin-right: auto;
     padding-left: 0;
     padding-bottom: 67px;
   }
@@ -62,20 +65,28 @@
     &::after {
       margin-top: -15px;
       margin-left: 220px;
-      width: calc(100% - 291px);
+      width: calc(100% - 290px);
     }
   }
 }
 
 @media (min-width: @desktop-width) {
   .comment__title {
+    background-color: white;
+    padding-right: 50px;
+
     &::before {
-      margin-left: -110px;
-      width: 70px;
+      margin-left: -39px;
+      margin-top: 1px;
+      width: 40px;
+      height: 40px;
+      background-color: white;
     }
 
     &::after {
-      width: calc(100% - 331px);
+      width: 100vw;
+      margin-left: calc(-1 * ((100vw - 1238px) / 2));
+      z-index: -1;
     }
   }
 }
@@ -97,13 +108,13 @@
 
 @media (min-width: @desktop-width) {
   .comment__input {
-    width: 84.4vw;
+    width: 1220px;
   }
 }
 
 .comment__input::placeholder {
   padding-top: 11px;
-  font-family: "Oswald", "Times New Roman", serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;

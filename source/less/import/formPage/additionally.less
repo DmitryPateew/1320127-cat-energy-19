@@ -1,5 +1,5 @@
 @tablet-width: 768px;
-@desktop-width: 1200px;
+@desktop-width: 1300px;
 
 .additionally {
   border: none;
@@ -17,6 +17,9 @@
   .additionally {
     padding-left: 0;
     padding-bottom: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1220px;
   }
 }
 
@@ -43,8 +46,9 @@
 
 @media (min-width: @desktop-width) {
   .additionally__wrap {
-    width: 85vw;
+    width: 1220px;
     padding-left: 0;
+    margin-left: 18px;
   }
 }
 
@@ -111,15 +115,22 @@
 @media (min-width: @desktop-width) {
   .additionally__title {
     padding-left: 0;
+    background-color: white;
+    padding-right: 45px;
+    margin-left: 15px;
 
     &::before {
-      margin-top: 21px;
-      margin-left: -110px;
-      width: 70px;
+      margin-left: -39px;
+      margin-top: 1px;
+      width: 40px;
+      height: 40px;
+      background-color: white;
     }
 
     &::after {
-      width: calc(100% - 366px);
+      width: 100vw;
+      margin-left: calc(-1 * ((100vw - 1220px) / 2));
+      z-index: -1;
     }
   }
 }

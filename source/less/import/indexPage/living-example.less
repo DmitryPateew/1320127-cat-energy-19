@@ -1,15 +1,12 @@
 @tablet-width: 768px;
-@desktop-width: 1200px;
+@desktop-width: 1300px;
 
 .living-example {
-  display: flex;
-  flex-wrap: wrap;
   background-color: #f2f2f2;
 }
 
 @media (min-width: @tablet-width) {
   .living-example {
-    padding-top: 25px;
     background-color: #ffffff;
     border: 1px solid #f2f2f2;
   }
@@ -17,11 +14,39 @@
 
 @media (min-width: @desktop-width) {
   .living-example {
-    justify-content: left;
     background-color: #eaeaea;
+  }
+}
+
+.living-example__shell {
+  display: flex;
+  flex-wrap: wrap;
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: @tablet-width) {
+  .living-example__shell {
+    width: auto;
+    padding-top: 25px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .living-example__shell {
+    width: 1220px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: left;
     border: none;
     padding-top: 60px;
   }
+}
+
+.living-example__desktop {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (min-width: @tablet-width) {
@@ -32,7 +57,7 @@
 
 @media (min-width: @desktop-width) {
   .living-example__desktop {
-    width: auto;
+    width: 1220px;
     display: flex;
     justify-content: space-between;
   }
@@ -48,9 +73,17 @@
   }
 }
 
+@media (min-width: 1000px) {
+  .living-example__wrapper {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 @media (min-width: @desktop-width) {
   .living-example__wrapper {
-    padding-left: 110px;
+    padding-left: 0;
   }
 }
 
@@ -75,12 +108,19 @@
   }
 }
 
+@media (min-width: 1000px) {
+  .living-example__title {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 @media (min-width: @desktop-width) {
   .living-example__title {
     position: absolute;
     margin-top: -195px;
-    padding-left: 110px;
-    padding-right: 60vw;
+    padding-left: 0;
   }
 }
 
@@ -129,5 +169,39 @@
 @media (min-width: @desktop-width) {
   .living-example__result {
     flex-direction: column;
+  }
+}
+
+.living-example__cost {
+  margin-top: 0;
+  padding-top: 8px;
+  padding-bottom: 25px;
+  padding-right: 20px;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 20px;
+  letter-spacing: normal;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .living-example__cost {
+    width: 174px;
+    padding-top: 30px;
+    font-size: 20px;
+    line-height: 30px;
+    color: #111111;
+    text-align: right;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .living-example__cost {
+    width: 430px;
+    padding-left: 0;
+    text-align: left;
   }
 }
