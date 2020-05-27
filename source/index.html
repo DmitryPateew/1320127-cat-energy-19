@@ -13,7 +13,7 @@
     <h2 class="visually-hidden">Главное меню навигации</h2>
     <a class="logo header__logo" href="#">
       <picture>
-        <source media="(min-width: 1200px)" srcset="img/content/logo/logo-desktop-svg.svg">
+        <source media="(min-width: 1300px)" srcset="img/content/logo/logo-desktop-svg.svg">
         <source media="(min-width: 768px)" srcset="img/content/logo/logo-tablet-svg.svg">
         <img src="img/content/logo/logo-mobile-header-svg.svg" class="logo__img" width="191" height="39" alt="Логотип магазина КЭТ ЭНЕРДЖИ">
       </picture>
@@ -32,13 +32,13 @@
       питание для котов</h2>
     <p class="presentation-goods__description">Занялся собой? Займись котом!</p>
     <picture>
-      <source type="image/webp" media="(min-width: 1200px)"
+      <source type="image/webp" media="(min-width: 1300px)"
               srcset="img/content/index-main-picture/webp/index-can-1x.webp 1x, img/content/index-main-picture/webp/index-can-2x.webp 2x">
       <source type="image/webp" media="(min-width: 768px)"
               srcset="img/content/index-main-picture/webp/index-can-tablet-1x.webp 1x, img/content/index-main-picture/webp/index-can-tablet-2x.webp 2x">
       <source type="image/webp"
               srcset="img/content/index-main-picture/webp/index-can-mobile@1x.webp 1x, img/content/index-main-picture/webp/index-can-mobile@2x.webp 2x">
-      <source media="(min-width: 1200px)"
+      <source media="(min-width: 1300px)"
               srcset="img/content/index-main-picture/png/index-can.png 1x, img/content/index-main-picture/png/index-can-2x.png 2x">
       <source media="(min-width: 768px)"
               srcset="img/content/index-main-picture/jpg/index-can-tablet-1x.jpg 1x, img/content/index-main-picture/jpg/index-can-tablet-2x.jpg 2x">
@@ -132,20 +132,41 @@
       </div>
       <div class="before-after">
         <picture>
-          <source type="image/webp" media="(min-width: 1200px)"
+          <source type="image/webp" media="(min-width: 1300px)"
                   srcset="img/content/before/webp/before-desktop@1x.webp 1x, img/content/before/webp/before-desktop@2x.webp 2x">
           <source type="image/webp" media="(min-width: 768px)"
                   srcset="img/content/before/webp/before-tablet@1x.webp 1x, img/content/before/webp/before-tablet@2x.webp 2x">
           <source type="image/webp"
                   srcset="img/content/before/webp/before-mobile@1x.webp 1x, img/content/before/webp/before-mobile@2x.webp 2x">
-          <source media="(min-width: 1200px)"
+          <source media="(min-width: 1300px)"
                   srcset="img/content/before/png/before-desktop@1x.png 1x, img/content/before/png/before-desktop@2x.png 2x">
           <source media="(min-width: 768px)"
                   srcset="img/content/before/png/before-tablet@1x.png 1x, img/content/before/png/before-tablet@2x.png 2x">
-          <img class="before-after__img" width="311" height="232" src="img/content/index-main-picture/png/index-can-mobile@1x.png"  srcset="img/content/index-main-picture/png/index-can-mobile@2x.png 2x" alt="Картинка кота до корма компании CatEnergy">
+          <img class="before-after__img" width="311" height="232" src="img/content/before/png/before-mobile@1x.png"  srcset="img/content/before/png/before-mobile@2x.png 2x" alt="Картинка кота до корма компании CatEnergy">
+        </picture>
+        <picture>
+          <source type="image/webp" media="(min-width: 1300px)"
+                  srcset="img/content/after/webp/after-desktop@1x.webp 1x, img/content/after/webp/after-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/content/after/webp/after-tablet@1x.webp 1x, img/content/after/webp/after-tablet@2x.webp 2x">
+          <source type="image/webp"
+                  srcset="img/content/after/webp/after-mobile@1x.webp 1x, img/content/after/webp/after-mobile@2x.webp 2x">
+          <source media="(min-width: 1300px)"
+                  srcset="img/content/after/png/after-desktop@1x.png 1x, img/content/after/png/after-desktop@2x.png 2x">
+          <source media="(min-width: 768px)"
+                  srcset="img/content/after/png/after-tablet@1x.png 1x, img/content/after/png/after-tablet@2x.png 2x">
+          <img class="before-after__img visually-hidden" width="311" height="232" src="img/content/after/png/after-mobile@1x.png"  srcset="img/content/after/png/after-mobile@2x.png 2x" alt="Картинка кота после компании CatEnergy">
         </picture>
         <div class="before-after__wrap">
           <p class="before-after__text">Было</p>
+          <div class="range">
+            <div class="range__controls">
+              <div class="range__scale">
+                <div class="range__bar"></div>
+              </div>
+              <div class="range__toggle range__toggle--max"></div>
+            </div>
+          </div>
           <p class="before-after__text">Стало</p>
         </div>
       </div>
@@ -156,7 +177,7 @@
 <footer class="footer">
   <section class="footer__wrapper">
     <h2 class="visually-hidden">Контактные данные Интернет-магазин корма для котов "Cat Energy"</h2>
-    <div class="footer__address-wrapper">
+    <div class="footer__address-wrapper footer__address-wrapper--white">
     <article class="address footer__address">
       <h3 class="visually-hidden">Адрес Интернет-магазин корма для котов "Cat Energy"</h3>
       <p class="address__tagline">Приглашаем к&nbsp;сотрудничеству дилеров!</p>

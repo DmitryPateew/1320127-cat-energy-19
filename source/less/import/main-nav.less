@@ -11,12 +11,17 @@
 @media (min-width: @tablet-width) {
   .main-nav {
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    width: 380px;
+    padding-right: 30px;
+    padding-left: 35px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .main-nav {
+    width: auto;
+    padding-right: 0;
     padding-left: 535px;
     margin-right: 4px;
     font-size: 20px;

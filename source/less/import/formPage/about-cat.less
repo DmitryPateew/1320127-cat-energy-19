@@ -2,13 +2,18 @@
 @desktop-width: 1300px;
 
 .about-cat {
-  width: 88vw;
   padding-left: 17px;
   padding-bottom: 9px;
+  padding-right: 0;
   border: none;
   display: flex;
   flex-direction: column;
-  border-bottom: solid 1px #ededed;
+}
+
+@media (min-width: 360px) {
+  .about-cat {
+    width: 88vw;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -34,6 +39,7 @@
 }
 
 .about-cat__label {
+  font-family: "Oswald", "Arial", sans-serif;
   margin-right: 15px;
   font-size: 16px;
   font-weight: normal;
@@ -44,6 +50,7 @@
   text-align: left;
   color: #222222;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 @media (min-width: @tablet-width) {
@@ -54,11 +61,38 @@
 }
 
 .about-cat__input {
-  flex-grow: 1;
+  width: 71.3vw;
   padding-top: 10px;
   padding-bottom: 14px;
   margin-bottom: 13px;
   border: solid 1px #cdcdcd;
+}
+
+@media (min-width: 360px) {
+  .about-cat__input {
+    flex-grow: 1;
+    width: auto;
+  }
+}
+
+.about-cat__input--weight {
+  width: calc(71.5vw - 24px);
+}
+
+@media (min-width: 360px) {
+  .about-cat__input--weight {
+    width: auto;
+  }
+}
+
+.about-cat__input--age {
+  width: calc(71.5vw - 58px);
+}
+
+@media (min-width: 360px) {
+  .about-cat__input--age {
+    width: auto;
+  }
 }
 
 @media (min-width: @tablet-width) {

@@ -10,13 +10,13 @@
 @media (min-width: @tablet-width) {
   .owner-contacts {
     padding-left: 65px;
-    padding-bottom: 40px;
+    padding-bottom: 38px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .owner-contacts {
-    padding-left: 0;
+    padding-left: 12px;
     padding-bottom: 42px;
     width: 1220px;
     margin-left: auto;
@@ -25,6 +25,7 @@
 }
 
 .owner-contacts__title {
+  font-family: "Oswald", "Arial", sans-serif;
   width: 185px;
   padding-top: 28px;
   margin-bottom: 25px;
@@ -93,7 +94,7 @@
 
     &::after {
       width: 100vw;
-      margin-left: calc(-1 * ((100vw - 1234px) / 2));
+      margin-left: calc(-1 * ((100vw - 1200px) / 2));
       z-index: -1;
     }
   }
@@ -128,6 +129,7 @@
 }
 
 .owner-contacts__label {
+  font-family: "Oswald", "Arial", sans-serif;
   margin-right: 13px;
   font-size: 16px;
   font-weight: normal;
@@ -157,7 +159,7 @@
 
 .owner-contacts__input {
   flex-grow: 1;
-  min-width: 200px;
+  width: 200px;
   padding-top: 13px;
   padding-bottom: 13px;
   margin-bottom: 10px;

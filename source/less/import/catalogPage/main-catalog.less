@@ -12,6 +12,7 @@
 }
 
 .main-catalog__title {
+  font-family: "Oswald", "Arial", sans-serif;
   margin-top: 0;
   margin-bottom: 0;
   padding-top: 12px;
@@ -74,7 +75,7 @@
 @media (min-width: 620px) {
   .main-catalog__items {
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: normal;
   }
 }
@@ -90,15 +91,15 @@
 
 @media (min-width: 820px) {
   .main-catalog__items {
-    padding-left: 0;
-    padding-right: 0;
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
 }
 
 @media (min-width: @desktop-width) {
   .main-catalog__items {
     justify-content: space-between;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 

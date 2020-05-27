@@ -2,7 +2,7 @@
 @desktop-width: 1300px;
 
 .additional-item {
-  max-width: 280px;
+  width: 280px;
   padding-bottom: 24px;
   border-top: 1px solid rgba(17, 17, 17, 0.1);
   border-bottom: 1px solid rgba(17, 17, 17, 0.1);
@@ -10,7 +10,8 @@
 
 @media (min-width: @tablet-width) {
   .additional-item {
-    max-width: none;
+    margin-right: 0;
+    width: auto;
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding-left: 38px;
     padding-right: 38px;
@@ -58,6 +59,7 @@
 }
 
 .additional-item__title {
+  font-family: "Oswald", "Arial", sans-serif;
   flex-grow: 2;
   margin-top: 0;
   margin-bottom: 0;
@@ -152,7 +154,7 @@
 
 @media (min-width: @desktop-width) {
   .additional-item__price {
-    width: 44px;
+    width: 48px;
     padding-right: 0;
     padding-left: 0;
     text-align: left;
@@ -160,6 +162,7 @@
 }
 
 .additional-item__button {
+  font-family: "Oswald", "Arial", sans-serif;
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 110px;
